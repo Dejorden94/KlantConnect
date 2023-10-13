@@ -14,13 +14,17 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --primary-color: #C8A3DD;
+    --secondary-color: #64419A;
+    --tertiary-color: #3C2035;
+}
+
 body {
     font-size: 1.6rem;
     background: var(--primary-color);
 }
 
-:root {
-    --primary-color: #C8A3DD;
-    --secondary-color: #64419A;
-    --tertiary-color: #3C2035;
+.menu-link {
+    color: var(--secondary-color);
 }
