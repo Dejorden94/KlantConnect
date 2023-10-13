@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: var(--primary-color);
+}
+
+:root {
+    --primary-color: #C8A3DD;
+    --secondary-color: #64419A;
+    --tertiary-color: #3C2035;
+}
