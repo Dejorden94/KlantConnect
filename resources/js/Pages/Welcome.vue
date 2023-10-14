@@ -1,6 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
 import Information from '@/Components/Information.vue';
+import Hero from '@/Components/Hero.vue';
 
 defineProps({
     canLogin: {
@@ -41,6 +42,7 @@ defineProps({
         </div>
     </nav>
 
+    <Hero />
     <main>
         <Information />
     </main>
