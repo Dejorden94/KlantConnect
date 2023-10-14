@@ -15,6 +15,7 @@ html {
 }
 
 :root {
+    --background-color: #EEE;
     --primary-color: #C8A3DD;
     --secondary-color: #64419A;
     --tertiary-color: #3C2035;
@@ -22,7 +23,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background: var(--primary-color);
+    background: var(--background-color);
 }
 
 .menu-link {
