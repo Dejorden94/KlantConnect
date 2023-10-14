@@ -6,7 +6,14 @@
     </article>
 </template>
 <style scoped>
+h1 {
+    max-width: 25rem;
+}
+
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 80vh;
     width: 100%;
 }
