@@ -40,9 +40,18 @@ defineProps({
             </template>
         </div>
     </nav>
-    <Information />
+
+    <main>
+        <Information />
+    </main>
 </template>
 
 <style>
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (prefers-color-scheme: dark) {}
 </style>
