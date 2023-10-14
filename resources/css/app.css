@@ -19,6 +19,8 @@ html {
     --primary-color: #C8A3DD;
     --secondary-color: #64419A;
     --tertiary-color: #3C2035;
+
+    --element-border-radius: 1rem;
 }
 
 h1 {

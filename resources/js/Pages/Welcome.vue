@@ -19,6 +19,7 @@ defineProps({
         required: true,
     },
 });
+
 </script>
 
 <template>
@@ -44,7 +45,22 @@ defineProps({
 
     <Hero />
     <main>
-        <Information />
+        <Information>
+            <template v-slot:heading>
+                <h1>Welkom bij KlantConnect</h1>
+            </template>
+            <template v-slot:text>
+                <p>In de dynamische wereld van vandaag is het essentieel om niet alleen bij te blijven met uw afspraken,
+                    maar ook om een diepgaand inzicht te hebben in uw klanten.
+                    Hier komt KlantConnect in beeld.</p>
+            </template>
+            <template v-slot:image>
+                <img src="images/information-img/Men-talking-amico.svg" alt="Aangepaste afbeelding">
+            </template>
+            <template v-slot:source>
+                <a href="https://storyset.com/people">People illustrations by Storyset</a>
+            </template>
+        </Information>
     </main>
 </template>
 
@@ -60,7 +76,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 @media (prefers-color-scheme: dark) {}
 </style>
+
+<script>
+
+export default {
+    components: {
+        Information
+    }
+}
+</script>
