@@ -1,5 +1,5 @@
 <template>
-    <article class="information-section">
+    <article class="information-section" :class="{ 'reverse': reverseDirection }">
         <section>
             <slot name="heading">
                 <h1>Een heading</h1>
@@ -45,4 +45,19 @@ h1 {
     border-radius: var(--element-border-radius);
     box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
 }
+
+.information-section.reverse {
+    flex-direction: row-reverse;
+}
 </style>
+
+<script>
+export default {
+    props: {
+        reverseDirection: {
+            type: Boolean,
+            default: false
+        }
+    }
+};
+</script>
