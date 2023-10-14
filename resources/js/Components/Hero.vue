@@ -1,2 +1,17 @@
-<template></template>
-<style scoped></style>
+<template>
+    <article class="hero">
+        <h1>Meer dan afpsraken. Echte connecties.</h1>
+        <img src="images/information-img/Schedule-amico.svg"
+            alt="Man aan het plannen met zij telefoon op een enorme calander">
+    </article>
+</template>
+<style scoped>
+.hero {
+    height: 80vh;
+    width: 100%;
+}
+
+.hero>img {
+    width: 50rem;
+}
+</style>

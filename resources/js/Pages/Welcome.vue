@@ -49,6 +49,13 @@ defineProps({
 </template>
 
 <style>
+nav {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main {
     display: flex;
     justify-content: center;

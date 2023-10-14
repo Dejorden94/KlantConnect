@@ -21,6 +21,10 @@ html {
     --tertiary-color: #3C2035;
 }
 
+h1 {
+    font-size: 150%;
+}
+
 body {
     height: 100vh;
     font-size: 1.6rem;
