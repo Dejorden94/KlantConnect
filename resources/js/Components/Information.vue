@@ -8,12 +8,14 @@
                 <p>Plaats tekst voor een omschrijving van de sectie</p>
             </slot>
         </section>
-        <slot name="image">
-            <img src="" alt="">
-        </slot>
-        <slot name="source">
-            <a href="">Optioneel een link</a>
-        </slot>
+        <section class="illustration-section">
+            <slot name="image">
+                <img src="" alt="">
+            </slot>
+            <slot name="source">
+                <a href="">Optioneel een link</a>
+            </slot>
+        </section>
     </article>
 </template>
 <style>
@@ -27,15 +29,20 @@ h1 {
     font-size: 250%;
 }
 
+.illustration-section {
+    width: 100%;
+}
+
 .information-section {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    gap: 2rem;
     padding: 2rem;
     background: var(--primary-color);
-    max-width: 50rem;
+    max-width: 80vw;
     min-width: 20vw;
     min-height: 20rem;
     border-radius: var(--element-border-radius);
+    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 </style>
